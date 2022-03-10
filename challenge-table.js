@@ -4,10 +4,18 @@ export class ChallengeTable extends LitElement {
   static get styles() {
     return css`
       :host {
-        color: red;
+        color: #333333;
+        font-weight: 500;
+        text-align: center;
       }
       table {
-        border: dashed purple;
+        
+        width: 150px;
+        margin: auto;
+      }
+
+      td{
+        border-bottom: solid 1px #333;
       }
     `;
   }
@@ -28,7 +36,7 @@ export class ChallengeTable extends LitElement {
 
   render() {
     return html`
-      <h1>${this.tableName}</h1>
+      <h3>${this.tableName}</h3>
       <table>
         ${this.data.map(
           (dataRow) => html`

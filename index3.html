@@ -5,12 +5,12 @@
     <meta charset="utf-8" />
     <title>UI Design Challenge</title>
     <link rel="shortcut icon" href="https://www.vernier.com/wp-content/uploads/2019/10/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="goog.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="./index.js" type="module"></script>
   </head>
  
   <body>
@@ -48,28 +48,32 @@
         <div class="tabledisplay goog-col l3 goog-shadow-4" style="height: 374px;">
            
             <div id="defaultbtnGroup" class="goog-btn-group">
-                <button class="goog-btn goog-secondary" id="smallButton" onclick="">Small</button>
-                <button class="goog-btn goog-secondary" id="mediumButton" onclick="">Medium</button>
-                <button class="goog-btn goog-secondary" id="largeButton" onclick="">Large</button>
+                <button class="goog-btn goog-primary active">Small</button>
+                <button class="goog-btn goog-primary">Medium</button>
+                <button class="goog-btn goog-primary">Large</button>
             </div>
+          <h3 style="text-align: center; width: 80%; margin: auto; margin-top: 24px;">Table Data should be here.</h3>
+          
+          
 
-          <div id="table">
-            
-            <challenge-table></challenge-table>
-              
-          </div>
+          
+          
         </div>
         
         <div class="tabledisplay goog-col l1">
-         <p style="color: white;">a</p>
+         <p>a</p>
         </div>
         <div class="graphdisplay goog-col l8 goog-shadow-4" style="text-align: right;">
             <challenge-chart></challenge-chart>
+           <!-- <p>placeholding</p>-->
         </div>
       </div>
       </div>
     <footer></footer>
 
-      
+      <script src="./index.js" type="text/javascript"></script>
+      <script src='challenge-chart\dist\challenge-chart.js' type='text/javascript'></script>
+      <script src='ChallengeDataService.js' type='text/javascript'></script>
+      <script src='challenge-table.js' type='text/javascript'></script>
   </body>
 </html>

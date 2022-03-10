@@ -1,0 +1,54 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #007377;
+    width: 100%;
+    height: 64px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.08), 0 5px 4px 0px rgba(0,0,0,.08), 0 1px 10px 0px rgba(0,0,0,.08);
+}
+
+
+.logo{
+    height: 48px;
+    width: auto;
+    border-right: #fff solid 1px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.goog-primary{
+    background-color: #007377;
+}
+
+.goog-btnwd{
+    width: 100px;
+}
+
+.goog-btn .goog-secondary{
+    border-color: 1px solid #007377;
+}
+
+.goog-btn:hover.goog-primary{
+    background-color: #ff6900;
+}
+
+.goog-btn:hover.goog-secondary{
+    background-color: 1px solid #ff6900;
+}
+
+.goog-btn-group{
+    width: 100%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 40px;
+}
