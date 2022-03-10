@@ -45,6 +45,11 @@ header{
     width: 100%;
 }
 
+/*class to create the blank div*/
+.blank::before{
+    content: '';
+}
+
 footer{
     position: absolute;
     bottom: 0;
