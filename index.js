@@ -15,13 +15,35 @@ challengeTable.data = [
 challengeTable.tableName = 'Linear Data'
 
 document.querySelector('#smallButton').addEventListener('click', async () => {
-  // code for event handler
+ //  code for event handler
   console.log("Button Pushed")
 });
 
 document.querySelector('#mediumButton').addEventListener('click', async () => {
-  // code for event handler
-  console.log("Button Pushed2")
+ /* // code for event handler
+  dataSet=
+{ 
+  name: "medium",
+  xColumn: {
+    name: 'x',
+    values: [1,2,3,4,5,6,7]
+  },
+  yColumn: {
+    name: 'y',
+    values: [1,2,3,4,5,6,7]
+  }
+}
+  
+  data = [
+    [x1, y1],
+    [x2, y2],
+    [x3, y3],
+  ...
+  ]*/
+  const data = dataSet.xColumn.values.map((value, index) => ({x: value, y: dataSet.yColumn.values[index]}));
+  //getting error woth dataSet on line 45 
+  data = dataSet.xColumn.values.map((value, index) => [value, dataSet.yColumn.values[index]]);
+  
 });
 
 document.querySelector('#largeButton').addEventListener('click', async () => {
