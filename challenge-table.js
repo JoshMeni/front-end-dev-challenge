@@ -4,19 +4,40 @@ export class ChallengeTable extends LitElement {
   static get styles() {
     return css`
       :host {
-        color: #333333;
+        color: #222;
         font-weight: 500;
         text-align: center;
+        overflow-y: scroll;
       }
       table {
-        
-        width: 150px;
+        overflow-y: auto;
+      
+        width: 250px;
         margin: auto;
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        display: table;
+        background-color: #fff;
+        color: #212121;
+        font-size: 12px;
+        height: 550px;
+        box-shadow: 0 2px 4px -1px rgba(0,0,0,.08), 0 4px 5px 0 rgba(0,0,0,.08), 0 1px 10px 0 rgba(0,0,0,.08);
       }
 
       td{
-        border-bottom: solid 1px #333;
+        
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+        padding: 8px;
+        height: 24px;
       }
+
+      tr{
+        border-bottom: 1px solid #ddd;
+      }
+         
     `;
   }
   

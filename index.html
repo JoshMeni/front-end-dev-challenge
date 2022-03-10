@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="./index.js" type="module"></script>
+     <meta name="viewport" content=
+        "width=device-width, initial-scale=1">
   </head>
  
   <body>
@@ -45,7 +47,7 @@
       </div>
       
       <div class="goog-row" style="margin-top: 25px;">
-        <div class="tabledisplay goog-col l3 goog-shadow-4" style="height: 374px;">
+        <div class="tabledisplay goog-col l4">
            
             <div id="defaultbtnGroup" class="goog-btn-group">
                 <button class="goog-btn goog-secondary" id="smallButton" onclick="">Small</button>
@@ -53,17 +55,18 @@
                 <button class="goog-btn goog-secondary" id="largeButton" onclick="">Large</button>
             </div>
 
-          <div id="table">
+          <div class="scroll">
+            <div id="table">
             
             <challenge-table></challenge-table>
-              
+           </div>   
           </div>
         </div>
         
         <div class="tabledisplay goog-col l1 blank">
-        <p style="color: white;">a</p><!--Replace with blank if time-->
+        <p style="color: white;">a</p>
         </div>
-        <div class="graphdisplay goog-col l8 goog-shadow-4" style="text-align: right;">
+        <div class="graphdisplay goog-col l7 goog-shadow-4" style="text-align: right;">
             <challenge-chart></challenge-chart>
         </div>
       </div>

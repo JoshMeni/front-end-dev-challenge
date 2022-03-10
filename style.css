@@ -1,5 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    margin: auto;
 }
 
 header{
@@ -48,6 +50,16 @@ header{
 /*class to create the blank div*/
 .blank::before{
     content: '';
+}
+.scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+ height: 650px;
+}
+
+.chartdisplay{
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 footer{

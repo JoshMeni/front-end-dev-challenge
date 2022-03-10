@@ -58,7 +58,7 @@ class ChallengeChart extends LitElement {
       {
         type: 'line',
         backgroundColor: 'white',
-        borderColor: 'red',
+        borderColor: '#000',
         data: this.data,
         showLine: true,
         yAxisID: 'y',
